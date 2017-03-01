@@ -60,6 +60,7 @@ var battle = function (pokemon, difficulty) {
   if (difficulty === 1) {
     while (health > 0 && dmg < 20) {
       move = window.prompt('choose a move (scratch or claw)')
+      move = stringScrubber(move)
       if (move === 'scratch') {
         chance = Math.random()
         if (chance >= 0.5) {
@@ -78,8 +79,6 @@ var battle = function (pokemon, difficulty) {
         }
       } else {
         window.alert('that\'s not a move')
-        health -= 0
-        dmg += 0
         continue
       }
       if (dmg >= 20) {
@@ -97,6 +96,7 @@ var battle = function (pokemon, difficulty) {
   } else if (difficulty === 2) {
     while (health > 0 && dmg < 20) {
       move = window.prompt('choose a move (scratch or claw)')
+      move = stringScrubber(move)
       if (move === 'scratch') {
         chance = Math.random()
         if (chance >= 0.6) {
@@ -115,8 +115,6 @@ var battle = function (pokemon, difficulty) {
         }
       } else {
         window.alert('that\'s not a move')
-        health -= 0
-        dmg += 0
         continue
       }
       if (dmg >= 20) {
@@ -134,6 +132,7 @@ var battle = function (pokemon, difficulty) {
   } else if (difficulty === 3) {
     while (health > 0 && dmg < 20) {
       move = window.prompt('choose a move (scratch or claw)')
+      move = stringScrubber(move)
       if (move === 'scratch') {
         chance = Math.random()
         if (chance >= 0.7) {
@@ -152,8 +151,6 @@ var battle = function (pokemon, difficulty) {
         }
       } else {
         window.alert('that\'s not a move')
-        health -= 0
-        dmg += 0
         continue
       }
       if (dmg >= 20) {
